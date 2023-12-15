@@ -13,3 +13,4 @@ void main(){
     printf("%s\t",sample.string);
     printf("%d",sample.var);
 }
+
