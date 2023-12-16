@@ -1,0 +1,14 @@
+Line No	 Token	 Lexime	
+-----------------------------
+1	void 	 keyword
+2	main 	 keyword
+2	int 	 keyword
+2	 abc	  identifier
+2	 ;	 Special symbol
+3	c	identifier
+3	 10	  identifier
+3	 ;	 Special symbol
+4	 bc	  identifier
+4	+	 identifier
+4	 5	  identifier
+4	 ;	 Special symbol
