@@ -1,0 +1,12 @@
+
+Given String : i+i*(i/i)$ 
+i+i*(i/i)$ 	 F->i
++i*(i/i)$ 	 E->+TE'
+i*(i/i)$ 	 F->i
+*(i/i)$ 	 *FT'|/FT'
+(i/i)$ 	 F->(E)
+i/i)$ 	 F->i
+/i)$ 	 *FT'|/FT'
+i)$ 	 F->i
+)$ 	 F->(E)
+$ 	 $
