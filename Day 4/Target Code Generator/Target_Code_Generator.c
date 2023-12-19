@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 FILE *f1;
-
+ 
 void main(){
     char res[10],eq[10],op1[10],op[10],op2[10];
     printf("Hello World\n");

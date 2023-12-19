@@ -36,9 +36,9 @@ void main(){
     printf("\n");
     E();
     if(*ch=='\0')
-        printf("\nString Accepted");
+        printf("\nString Accepted\n");
     else
-        printf("\nString not Acceptable @ %d times",error);
+        printf("\nString not Acceptable @ %d times\n",error);
     
     
     fclose(f1);
