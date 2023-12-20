@@ -1,0 +1,6 @@
+void main(){
+    hello;
+    while(){
+        i++;
+    }
+}

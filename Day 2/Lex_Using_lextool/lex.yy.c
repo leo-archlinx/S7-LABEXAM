@@ -473,8 +473,9 @@ char *yytext;
 #line 1 "lex.l"
 #line 2 "lex.l"
     #include<stdio.h>
-#line 477 "lex.yy.c"
+    #include<stdlib.h>
 #line 478 "lex.yy.c"
+#line 479 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -691,9 +692,9 @@ YY_DECL
 		}
 
 	{
-#line 5 "lex.l"
+#line 6 "lex.l"
 
-#line 697 "lex.yy.c"
+#line 698 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -752,38 +753,38 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 6 "lex.l"
+#line 7 "lex.l"
 {
     printf("its a identifier %s\n",yytext);
 }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 9 "lex.l"
+#line 10 "lex.l"
 {
     printf("its an identifier %s\n",yytext);
 }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "lex.l"
+#line 13 "lex.l"
 {
     printf("its a parathesis %s\n",yytext);
 }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 15 "lex.l"
+#line 16 "lex.l"
 {
     printf("its an operator %s\n",yytext);
 }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 18 "lex.l"
+#line 19 "lex.l"
 ECHO;
 	YY_BREAK
-#line 787 "lex.yy.c"
+#line 788 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1788,7 +1789,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 18 "lex.l"
+#line 19 "lex.l"
 
 
 int yywrap(){
@@ -1796,6 +1797,7 @@ int yywrap(){
 }
 
 void main(){
-    printf("Enter the string \n");
+    printf("\nlexical analyzer using lextool\n");
+    yyin=fopen("input.txt","r");   
     yylex();
 }

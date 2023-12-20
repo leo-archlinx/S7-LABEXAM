@@ -1,5 +1,7 @@
+%option noyywrap
 %{
     #include<stdio.h>
+    #include<stdlib.h>
 %}
 
 %%
@@ -17,11 +19,8 @@ if|else|while|do|for|switch|return|int|void|main|float {
 }
 %%
 
-int yywrap(){
-    return 1;
-}
-
 void main(){
-    printf("Enter the string \n");
+    printf("\nlexical analyzer using lextool\n");
+    yyin=fopen("input.txt","r");   
     yylex();
 }
